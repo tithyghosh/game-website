@@ -41,7 +41,7 @@
          <!-- Main container -->
          <div class="relative flex min-h-140 flex-col bg-linear-to-br from-[#0b0526] via-[#180a47] to-[#230070] lg:block lg:min-h-screen">
             <!-- Bottom purple strip -->
-            <div class="absolute inset-x-0 bottom-0 hidden h-[18%] bg-linear-to-r from-[#6123ff] via-[#8d36ff] to-[#5b1cd6] lg:block lg:h-[35%]"></div>
+            <div class="absolute inset-x-0 bottom-0 hidden h-[18%] bg-linear-to-r from-[#6123ff] via-[#8d36ff] to-[#5b1cd6] lg:block lg:h-[28%]"></div>
 
             <!-- Soft glow layer -->
             <div class="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(140,95,255,0.35),rgba(10,5,37,0)_45%)]"></div>
@@ -72,7 +72,7 @@
             />
 
             <!-- Stats row -->
-            <div class="relative z-20 order-3 grid grid-cols-3 gap-7 px-6 pb-8 text-white sm:px-10 sm:gap-12 lg:absolute lg:bottom-10 lg:left-14 lg:px-0 lg:pb-0">
+            <div class="relative z-20 order-3 grid grid-cols-3 gap-7 px-6 pb-8 text-white sm:px-10 sm:gap-12 lg:absolute lg:bottom-10 lg:left-14 lg:px-0 lg:pb-0 ">
                <div>
                   <p class="text-3xl font-extrabold sm:text-4xl">250 k</p>
                   <p class="mt-1 text-sm text-white/70">Rare game</p>
@@ -95,9 +95,9 @@
          </div>
       </section>
     </header>
-   <main class="bg-[#0e032b]">
+   <main class="bg-linear-to-b from-[#07031f] via-[#0b0526] to-[#140a3a]">
       <!-- Carosel card -->
-      <section class="bg-[#0e032b] py-14 text-white overflow-hidden">
+      <section class="pt-14 text-white overflow-hidden">
          <!-- Header Text -->
           <div class="px-10 sm:px-6 lg:px-12">
                <h1 class="text-2xl font-bold">
@@ -183,17 +183,51 @@
           </div>
       </section>
       <!-- Power of Gaming -->
-      <section class="text-white/90">
-         <div class="mx-12 border-2 rounded-3xl relative flex min-h-140 flex-col bg-[#0b0526] lg:block lg:min-h-screen">
-           <div class="m-8">
-            <h1 class="text-4xl font-extrabold">
-               Unlock the <br>
-               Power of Gaming
-            </h1>
-            <p class="text-sm text-gray-400 my-5">Game the potential of gaming application</p>
-            <button class="btn uppercase font-bold bg-linear-to-r from-[#6d6bff] via-[#9b5cff] to-[#e36bff] rounded-tr-4xl rounded-bl-2xl hover:bg-none hover:bg-cyan-950 transition duration-300 text-white">See Now It Work</button>
-      
-           </div> 
+      <section
+         class="relative overflow-hidden py-20 text-white"
+         style="background-image: linear-gradient(rgba(7,3,31,0.82), rgba(7,3,31,0.82)), url('assets/bg.png'); background-position: center; background-size: cover; background-repeat: no-repeat;"
+      >
+         <div class="pointer-events-none absolute left-1/2 top-1/2 h-95 w-95 -translate-x-1/2 -translate-y-1/2 rounded-full border border-violet-400/20"></div>
+         <div class="pointer-events-none absolute left-1/2 top-1/2 h-75 w-75 -translate-x-1/2 -translate-y-1/2 rounded-full border border-violet-400/15"></div>
+
+         <div class="mx-auto grid max-w-6xl grid-cols-1 items-center gap-8 px-6 lg:grid-cols-2">
+            <!-- Left content -->
+            <div class="space-y-5">
+               <h2 class="text-4xl font-extrabold leading-tight sm:text-5xl">
+                  Unlock the power <br>
+                  of Gaming
+               </h2>
+               <p class="max-w-md text-sm text-white/60">
+                  Game the potential of gaming applications
+               </p>
+               <button class="btn rounded-md border border-white/30 bg-transparent px-6 text-xs tracking-widest text-white hover:bg-white hover:text-black">
+                  SEE HOW IT WORKS
+               </button>
+
+               <div class="mt-10 flex gap-3">
+                  <button class="btn btn-circle btn-sm border border-white/20 bg-transparent text-white">❮</button>
+                  <button class="btn btn-circle btn-sm border border-white/20 bg-transparent text-white">❯</button>
+               </div>
+            </div>
+
+            <!-- Right visual -->
+            <div class="relative pt-8">
+               <div class="relative overflow-x-hidden rounded-2xl border border-white/10 bg-[#0e072b] shadow-2xl">
+                  <img src="assets/robot.png" alt="Gaming face art" class="h-105 w-full object-cover object-left opacity-40">
+                  <div class="pointer-events-none absolute inset-0 bg-linear-to-r from-[#10072f]/35 via-transparent to-transparent"></div>
+               </div>
+               <img
+                  src="assets/joystic.png"
+                  alt="Gaming controller art"
+                  class="pointer-events-none absolute right-[-10%] -top-3 z-20 w-[70%] object-contain drop-shadow-[0_30px_50px_rgba(0,0,0,0.62)]"
+               >
+
+               <!-- floating mini card -->
+               <div class="absolute -right-15 top-[60%] z-30 w-40 rounded-xl border border-white/15 bg-[#110a34]/90 px-4 py-3 shadow-xl backdrop-blur">
+                  <p class="text-xs font-semibold">Gaming generation</p>
+                  <p class="text-[11px] text-white/60">1m ago</p>
+               </div>
+            </div>
          </div>
       </section>
    </main>
